@@ -23,11 +23,11 @@ const App = () => {
           <br/>
           <button type="submit">Add Todo</button>
         </form>
-        <div>
+        <ul>
           {todo.map((item,index)=>(
             <p key={index}>{item}<span><button onClick={()=>handleClick(index)}>Delete</button></span></p>
           ))}
-        </div>
+        </ul>
     </div>
   )
 }
