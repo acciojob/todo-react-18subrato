@@ -25,7 +25,7 @@ const App = () => {
         </form>
         <ul>
           {todo.map((item,index)=>(
-            <p key={index}>{item}<span><button onClick={()=>handleClick(index)}>Delete</button></span></p>
+            <li key={index}>{item}<span><button onClick={()=>handleClick(index)}>Delete</button></span></li>
           ))}
         </ul>
     </div>
